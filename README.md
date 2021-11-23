@@ -57,14 +57,14 @@ Las herramientas que nos van a desarrollar este proyecto son las siguientes:
     ---
     **MUY IMPORTANTE RECORDAR**
 
-    El ```git clone``` lo vamos a utilizar **UNA ÚNICA VEZ** para crearnos una copia del repositorio a nivel local. Si ya tenemosesta copia, no volveremos a utilizar más este comando.
+    El ```git clone``` lo vamos a utilizar **UNA ÚNICA VEZ** para crearnos una copia del repositorio a nivel local. Si ya tenemos esta copia, no volveremos a utilizar más este comando.
 
     ---
 
   - Una vez clonado el repo, nos vamos a parar sobre la carpeta del proyecto ```musicoders-web```. Para movernos a esa carpeta después de haber hecho el clon, hay que usar este simple comando:
 
     ```bash
-    cd musicoders
+    cd musicoders-web
     ```
   - Ahora bien, antes de levantar el proyecto, necesitamos **instalar todas las dependencias** que necesita el proyecto para funcionar. ¿Cómo sé cuáles son estas dependencias?  Si tengo curiosidad de saber cuáles son, puedo ir a chusmear el archivo ```package.json```, donde me muestra en formato de JSON, todas las dependencias y otras cositas importantes de mi proyecto.
 
