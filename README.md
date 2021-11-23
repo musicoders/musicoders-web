@@ -90,18 +90,18 @@ Las herramientas que nos van a desarrollar este proyecto son las siguientes:
     npm run dev
     ```
   
-  Este proceso puede tardar un poquito. Una vez finalizado, para ver nuestra página andando, abrir http://localhost:3000 en el navegador.
+    Este proceso puede tardar un poquito. Una vez finalizado, para ver nuestra página andando, abrir http://localhost:3000 en el navegador.
 
-  Para terminar con la ejecución, podemos utilizar ```Ctrl + C``` dos veces.
+    Para terminar con la ejecución, podemos utilizar ```Ctrl + C``` dos veces.
 
-  ---
-  **A TENER EN CUENTA:**
+    ---
+    **A TENER EN CUENTA:**
 
-  El ```npm run dev``` va a mantener levantado el proyecto mientras nuestra terminal esté abierta o mantenga en ejecución la compilación. Si cerramos esa terminal donde se está ejecutando, o usamos el ```Ctrl + C``` para "matar la ejecución", entonces nuestro servidor local no va a estar más levantado y no vamos a poder ver nuestra página.
+    El ```npm run dev``` va a mantener levantado el proyecto mientras nuestra terminal esté abierta o mantenga en ejecución la compilación. Si cerramos esa terminal donde se está ejecutando, o usamos el ```Ctrl + C``` para "matar la ejecución", entonces nuestro servidor local no va a estar más levantado y no vamos a poder ver nuestra página.
 
-  Esto quiere decir que cada vez que prendemos la computadora para trabajar, hay que utilizar este comando de nuevo.
+    Esto quiere decir que cada vez que prendemos la computadora para trabajar, hay que utilizar este comando de nuevo.
 
-  ---
+    ---
   
 ### Inicializar el proyecto después de ya tenerlo localmente
 
