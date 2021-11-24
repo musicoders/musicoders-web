@@ -142,6 +142,29 @@ Los comandos de Git que vamos a estar utilizando en el día a día están enlist
 
     ---
 
+- ```git checkout rama-a-la-que-me-quiero-mover```
+  - Me permite moverme de una rama a otra. Es importante que el working area esté clean, es decir, no tengo que tener ningún cambio sin guardar para poder moverme sin problemas.
+
+    **¿Cómo sé si está mi working directory limpio?** Tiro un ```git status``` y leo qué me dice la terminal.
+
+    A la rama donde más nos vamos a estar moviendo es ```develop```, por lo que el comando se vería así:
+
+    ```bash
+    git checkout develop
+    ```
+  
+- ```git checkout -b nombre-de-mi-nueva-rama```
+  - Este comando hace un mágico combo y me permite hacer dos cosas a la vez: es una combinación entre los comandos ```git checkout``` y ```git branch```.
+    - El ```checkout```, como ya vimos, me permite moverme entre ramas.
+    - El ```-b``` me permite crear una nueva rama.
+
+    ---
+    **NOTA**:
+
+      Esto tranquilamente se puede hacer con los dos comandos por separado: utilizar ```git branch nombre-de-mi-nueva-rama``` y después para posicionarme en ella, hacer un ```git checkout nombre-de-mi-nueva-rama```. Pero la verdad es que, por lo general, cuando nos estamos creando una nueva rama es porque queremos empezar a trabajar en ella, por ende, siempre nos vamos a querer posicionar sobre ella, así que queda mucho más cómodo resolverlo en un solo comando.
+
+    ---
+
 - ```git add ruta/de/mi-archivo.js```
   - Me permite pasar un archivo del working directory (lugar donde estoy trabajando y haciendo cambios) al staging area (siguiente etapa en Git, donde mis archivos están listos para ser commiteados, pero todavía no los guardé).
 
@@ -153,11 +176,21 @@ Los comandos de Git que vamos a estar utilizando en el día a día están enlist
 - ```git commit -m "Acá va mi mensaje descriptivo sobre de qué se tratan mis cambios"```
   - Este comando es el que finalmente va a guardar mis cambios. Si después de hacerlo, tiro un ```git status```, si salió todo bien, voy a ver que la terminal me muestra un mensaje como este:
 
-  ```bash
-  
-  ```
+    ```bash
+    nothing to commit, working tree clean
+    ```
 
-- ```git push```
+- ```git push -u origin nombre-de-mi-rama```
+  - Este comando es el que me va a permitir subir mis cambios al repositorio remoto **por primera vez**. En nuestro caso, lo va a subir al repositorio que tenemos almacenado en GitHub.
+
+    **¿Por qué necesito hacerlo así la primera vez, en vez de utilizar directamente el ```git push```?** Porque creaste tu rama a nivel local, en tu computadora, por ende, todavía no tiene una referencia de que exista en el repositorio remoto en GitHub. Lo que hacen ```-u``` y ```origin``` es crearme esa referencia y dejar hecho un *caminito* para que mis cambios locales suban al remoto cada vez que uso ```git push``` solito.
+
+    ---
+    **IMPORTANTE**:
+
+      Sigo insistiendo con **la importancia de utilizar** ```git status``` **antes de cualquier otro comando**. Para el caso del ```git push```, me permite saber si es que tengo todo lo que quiero guardado antes de pushear.
+
+    ---
 
 - ```git pull```
 
