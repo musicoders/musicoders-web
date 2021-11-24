@@ -16,7 +16,7 @@ Para este proyecto, nos propusimos aprender nuevas tecnologías, y el stack eleg
 
 #### HERRAMIENTAS
 
-Las herramientas que nos van a desarrollar este proyecto son las siguientes:
+Las herramientas que nos van a ayudar a desarrollar este proyecto son las siguientes:
 
 - **Jira** --> https://musicoders.atlassian.net/
   - Vamos a utilizar un tablero muy sencillo que contiene 3 columnas: TODO, IN PROGRESS y DONE. Se crearán tareas concretas y breves y se utilizarán sus nombres para crear ramas de Git para concretarlas.
@@ -112,4 +112,56 @@ Las herramientas que nos van a desarrollar este proyecto son las siguientes:
   ```
   y vamos a ver nuestra página andando en http://localhost:3000.
 
-2. ¿CÓMO ES UN DÍA DE CODEO EN LA VIDA DE UN MUSICODER?
+### TRABAJAR CON GIT Y GITHUB
+
+Git es un controlador de versiones que nos permite trabajar en desarrollo colaborativamente. Cada persona tendrá una copia del repositorio en su computadora, hará sus cambios y los subirá al repositorio remoto que tenemos almacenado en GitHub: https://github.com/musicoders/musicoders-web.
+
+GitHub es el servicio que vamos a utilizar para almacenar nuestro repositorio a nivel remoto.
+
+### COMANDOS FUNDAMENTALES
+
+Los comandos de Git que vamos a estar utilizando en el día a día están enlistados a continuación:
+
+- ```git status```
+  - Me permite ver el estado de mis cambios. La terminal me mostrará mensajes dependiendo de mi estado: si está todo limpio y no hay nada para commitear, si tengo archivos modificados que esperan ser guardados, si ya tengo archivos en el staging area, etc.
+
+    ---
+    **IMPORTANTE TIRAR ESTE COMANDO ¡SIEMPRE!**
+
+    Es buena costumbre utilizar ```git status``` antes de proceder a hacer cualquier cosa, porque me notifica, justamente, el estado de mi trabajo.
+
+    - Antes de decidir hacer un ```git add ruta/de/mi-archivo.js```, PRIMERO hago ```git status``` Y LEO QUÉ ME DICE LA TERMINAL.
+
+    - Antes de hacer un ```git commit -m "Mi mensaje"```, PRIMERO hago un ```git status``` Y LEO QUÉ ME DICE LA TERMINAL, reviso que los archivos que están en el staging area son los que quiero commitear.
+
+    - Antes de hacer un ```git push```, PRIMERO hago un ```git status``` Y LEO QUÉ ME DICE LA TERMINAL, me cercioro de que está todo clean y que no hay nada para commitear, por ende, puedo subir mis cambios.
+
+    - Antes de hacer un ```git pull```, PRIMERO hago un ```git status``` Y LEO QUÉ ME DICE LA TERMINAL, me cercioro de que está todo clean y que no hay nada para commitear, por ende, puedo bajar los cambios.
+
+    - Y así, y así, y así... por los siglos de los siglos,  ```git status``` FOREVER!
+
+    ---
+
+- ```git add ruta/de/mi-archivo.js```
+  - Me permite pasar un archivo del working directory (lugar donde estoy trabajando y haciendo cambios) al staging area (siguiente etapa en Git, donde mis archivos están listos para ser commiteados, pero todavía no los guardé).
+
+    **¿Y cómo sé cuál es la ruta de un archivo?** Para eso es importante hacer antes el ```git status```, porque me muestra una lista con las rutas de todos los archivos que tuvieron cambios, y de ahí puedo sacar la ruta específica que necesito.
+
+- ```git add -A```
+  - Me permite pasar al staging area **todos los archivos** que el ```git status``` me muestra en sus diferentes listas: lista de archivos modificados ***(modified files)***, lista de archivos sin seguimiento ***(untracked files)*** y lista de eliminados ***(deleted files)***.
+
+- ```git commit -m "Acá va mi mensaje descriptivo sobre de qué se tratan mis cambios"```
+  - Este comando es el que finalmente va a guardar mis cambios. Si después de hacerlo, tiro un ```git status```, si salió todo bien, voy a ver que la terminal me muestra un mensaje como este:
+
+  ```bash
+  
+  ```
+
+- ```git push```
+
+- ```git pull```
+
+
+
+
+
