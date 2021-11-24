@@ -181,7 +181,7 @@ Los comandos de Git que vamos a estar utilizando en el día a día están enlist
     ```
 
 - ```git push -u origin nombre-de-mi-rama```
-  - Este comando es el que me va a permitir subir mis cambios al repositorio remoto **por primera vez**. En nuestro caso, lo va a subir al repositorio que tenemos almacenado en GitHub.
+  - Este comando es el que me va a permitir **subir mis cambios** al repositorio remoto **por primera vez**. En nuestro caso, lo va a subir al repositorio que tenemos almacenado en GitHub.
 
     **¿Por qué necesito hacerlo así la primera vez, en vez de utilizar directamente el ```git push```?** Porque creaste tu rama a nivel local, en tu computadora, por ende, todavía no tiene una referencia de que exista en el repositorio remoto en GitHub. Lo que hacen ```-u``` y ```origin``` es crearme esa referencia y dejar hecho un *caminito* para que mis cambios locales suban al remoto cada vez que uso ```git push``` solito.
 
@@ -193,7 +193,7 @@ Los comandos de Git que vamos a estar utilizando en el día a día están enlist
     ---
 
 - ```git pull```
-
+  - Me permite **traerme los cambios** que se hayan hecho en la rama sobre la que estoy. Por lo general, donde más vamos a utilzar este comando es sobre la rama ```develop```, ya que es la rama donde vamos a ir subiendo los cambios de todas las personas musicoders y donde va a ser casi seguro que siempre tengamos nuevos cambios esperando a ser pulleados.
 
 
 
