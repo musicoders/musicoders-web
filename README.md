@@ -195,6 +195,12 @@ Los comandos de Git que vamos a estar utilizando en el día a día están enlist
 - ```git pull```
   - Me permite **traerme los cambios** que se hayan hecho en la rama sobre la que estoy. Por lo general, donde más vamos a utilzar este comando es sobre la rama ```develop```, ya que es la rama donde vamos a ir subiendo los cambios de todas las personas musicoders y donde va a ser casi seguro que siempre tengamos nuevos cambios esperando a ser pulleados.
 
+---
+**IMPORTANTE:**:
+
+Antes de hacer el ```git pull```, recordar hacer primero un ```git status``` para ver que el working directory esté clean y no tenga ningún cambio sin commitear antes de pullear.
+
+---
 
 
 
